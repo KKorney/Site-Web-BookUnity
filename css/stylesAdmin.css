@@ -1,0 +1,235 @@
+
+
+
+/* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+
+        h1 {
+            text-align: center;
+        }
+
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+           
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .actions {
+            margin: 10px 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .actions form, .actions a {
+            display: inline-block;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .manage-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .manage-button:hover, a.button:hover {
+            background-color: #2980b9;
+        }
+
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background: #3498db;
+            color: white;
+        }
+
+
+    
+
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .checkbox-item {
+            
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+
+    .create-button {
+    display: block;          
+    margin: 10px auto 0;     
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: max-content;     
+    cursor: pointer;
+}
+
+
+        .create-button:hover {
+            background-color: #2980b9;
+        }
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.logo-circle {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+    user-select: none;
+}
+
+/* Mode clair par défaut */
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937; /* gris foncé clair */
+  margin-left: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mode sombre */
+body.dark-mode .logo-text {
+  color: #f4f3f5; /* gris très clair pour contraste */
+}
+
+
+
+.message-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            
+        }
+        .message-table th, .message-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .message-table th {
+           
+            text-align: center;
+        }
+
+
+
+        .filter-form {
+            max-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .filter-form select, .filter-form button {
+            padding: 6px 10px;
+        }
+        .respond-button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 5px 8px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .respond-button:hover {
+            background: #2980b9;
+        }
+        .resolved {
+            color: green;
+            font-weight: bold;
+        }
+        .unresolved {
+            color: red;
+            font-weight: bold;
+        }
+
+        .update-button {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .update-button:hover {
+            background-color: #2980b9;
+        }
+
+.main-button {
+    display: inline-block;
+    background-color: #2563eb; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.main-button:hover {
+    background-color: #1e40af; 
+    transform: translateY(-2px);
+}

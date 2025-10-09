@@ -1,0 +1,122 @@
+
+/* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+.support-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+.support-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+.support-container textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+.support-container select, .support-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+.message-success {
+            color: green;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+.message-error {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+
+
+.main-button {
+    display: inline-block;
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.main-button:hover {
+    background-color: #1e40af; /* blue-800 */
+    transform: translateY(-2px);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.logo-circle {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+    user-select: none;
+}
+
+/* Mode clair par défaut */
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937; /* gris foncé clair */
+  margin-left: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mode sombre */
+body.dark-mode .logo-text {
+  color: #f4f3f5; /* gris très clair pour contraste */
+}
+
+
+.action-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+.action-button:hover {
+            background: #2980b9;
+}

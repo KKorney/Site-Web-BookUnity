@@ -1,0 +1,206 @@
+/* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+/* Mode clair par défaut */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.book-item {
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    height: 100%;
+}
+
+
+
+body.dark-mode .book-item {
+    background-color: #1e1e1e;
+    border-color: #333;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+    color: #e0e0e0;
+}
+
+
+
+
+
+.book-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.book-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+    margin-bottom: 1rem;
+}
+
+.book-genres {
+    margin-bottom: 10px; /* espace sous les genres */
+    font-style: italic;  /* optionnel, juste pour style */
+    
+}
+
+.book-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1; /* prend tout l'espace vertical restant */
+}
+
+
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.logo-circle {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+   
+}
+
+/* Mode clair par défaut */
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937; /* gris foncé clair */
+  margin-left: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mode sombre */
+body.dark-mode .logo-text {
+  color: #f4f3f5; /* gris très clair pour contraste */
+}
+
+
+.filter-button {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+    margin-top: 1rem;
+    align-self: center; /* centrer dans le formulaire */
+}
+
+.filter-button:hover {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    transform: translateY(-2px);
+}
+
+.filter-button:active {
+    transform: translateY(0);
+}
+
+
+.main-button {
+    display: inline-block;
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.main-button:hover {
+    background-color: #1e40af; /* blue-800 */
+    transform: translateY(-2px);
+}
+
+.action-button:disabled {
+            background-color: #4CAF50;
+            cursor: not-allowed;
+        }
+
+.action-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+.action-button:hover {
+            background: #2980b9;
+}
+
+
+
+.read-button {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: auto; /* bouton en bas */
+}
+
+.read-button:hover {
+    background-color: #1e40af;
+}
+
+
+
+

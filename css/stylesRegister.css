@@ -1,0 +1,126 @@
+        /* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Box principale */
+.bordure {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+ 
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titres */
+.bordure h2 {
+  text-align: center;
+ 
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.bordure label {
+  display: block;
+  margin: 15px 0 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+body.dark-mode .bordure label {
+  display: block;
+  margin: 15px 0 6px;
+  color: #f7f2f2e7;
+  font-weight: 600;
+}
+
+/* Inputs & select */
+.input-style {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-style:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px #4a90e2;
+}
+
+/* Inputs qui prennent toute la largeur et marge */
+.block {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Bouton envoyer */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* Messages d'erreur */
+.bordure > div[style*="color: red"] {
+  background-color: #fddede;
+  color: #b00000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Messages de succès */
+.bordure > div[style*="color: green"] {
+  background-color: #d6f5d6;
+  color: #216e21;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.main-button:hover {
+    background-color: #1e40af; /* blue-800 */
+    transform: translateY(-2px);
+}

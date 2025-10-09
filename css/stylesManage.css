@@ -1,0 +1,122 @@
+        
+/* Mode clair par défaut */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+        
+        
+        
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+          
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .actions form {
+            display: inline;
+        }
+        .create-button, .delete-button, .update-button {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .create-button { background-color: #3498db; }
+        .create-account-button:hover { background-color: #2980b9; }
+        .delete-button { background-color: #e74c3c; }
+        .delete-button:hover { background-color: #c0392b; }
+        .update-button { background-color: #27ae60; }
+        .update-button:hover { background-color: #1e8449; }
+
+        .logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: opacity 0.3s ease, transform 0.2s ease;
+        }
+
+        .logo-link:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+        }
+
+        .logo-circle {
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+        color: white;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+        user-select: none;
+        }
+
+      /* Mode clair par défaut */
+.logo-text {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937; /* gris foncé clair */
+  margin-left: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Mode sombre */
+body.dark-mode .logo-text {
+  color: #f4f3f5; /* gris très clair pour contraste */
+}
+
+
+.main-button {
+    display: inline-block;
+    background-color: #2563eb; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.main-button:hover {
+    background-color: #1e40af; 
+    transform: translateY(-2px);
+}
+
+       
+
+      
